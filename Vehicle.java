@@ -1,3 +1,4 @@
+//Try It/ Solve It
 //Question #9
 //Jan Fic
 
@@ -5,10 +6,10 @@ import java.util.Date;
 
 public class Vehicle implements Engine , Chassis {
 	
-	private Date vehicleManufacturedDate; 
-	private String vehicleManufacturer, vehicleMake, vehicleModel,vehicleType,driveTrain; 
-	private Chassis vehicleFrame; 
-	private Engine vehicleEngine; 
+	Date vehicleManufacturedDate; 
+	String vehicleManufacturer, vehicleMake, vehicleModel,vehicleType,driveTrain; 
+	Chassis vehicleFrame; 
+	Engine vehicleEngine; 
 	
 	public Vehicle() {
 		vehicleManufacturedDate = new Date();

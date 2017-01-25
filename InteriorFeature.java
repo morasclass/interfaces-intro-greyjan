@@ -1,4 +1,5 @@
-//Question #9
+//Try It/ Solve It
+//Question #7
 //Jan Fic
 
 public class InteriorFeature implements Feature {

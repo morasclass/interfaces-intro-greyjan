@@ -6,5 +6,5 @@ Vocab Answers
 
 1.constuctor
 2.final
-3.
-4.interface
+3.final class
+4.
