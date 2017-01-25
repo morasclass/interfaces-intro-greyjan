@@ -22,7 +22,7 @@ public class VehicleChassis implements Chassis{
 	}
 	
 	public String toString() {
-		return "Chassis Name\t: Chassis";
+		return "Chassis Name\t:" +  chassisName;
 	}
 
 	public static void main(String[] args) {

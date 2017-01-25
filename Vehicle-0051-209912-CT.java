@@ -17,8 +17,8 @@ public class Vehicle implements Engine , Chassis {
 		vehicleModel = "Generic";
 		vehicleType = "Generic";
 		driveTrain = "Generic";
-		vehicleFrame = new VehicleFrame();
-		vehicleEngine = new ManufacturedEngine();
+		vehicleFrame = this;
+		vehicleEngine = this;
 	}
 	
 	public Vehicle(Date vehicleManufacturedDate, String vehicleManufacturer, String vehicleMake, String vehicleModel,String vehicleType,String driveTrain,Chassis vehicleFrame,Engine vehicleEngine) {
@@ -66,20 +66,6 @@ public class Vehicle implements Engine , Chassis {
 	
 	@Override
 	public String toString() {
-		return	"Manufacturer Name\t: " + vehicleManufacturer +"\n" + 
-				"Manufactured Date\t: " + vehicleManufacturedDate + "\n" + 
-				"Vehicle Make\t: " + vehicleMake + "\n" + 
-				"Vehicle Model\t: " + vehicleModel + "\n" +
-				"Vehicle Type\t: " + vehicleType + "\n" + 
-				vehicleEngine.toString();
-	}
-	
-	public static void main(String[] args) {
-		System.out.println("=================Scenario 1");
-		Vehicle v = new Vehicle();
-		System.out.println(v);
-				System.out.println("=================Scenario 2");
-		Vehicle v2 = new Vehicle(new Date(), "Honda", "Honda" , "Prelude","null","2WD: Two-Wheel Drive", new VehicleChassis(), new ManufacturedEngine("Honda", new Date(),"H-Series","H23A1",4,"88AKI","2WD: Two-Wheel Drive") );
-		System.out.println(v2);
+		return "Manufacturer Name\t: " + vihicleManufacturer;
 	}
 }
