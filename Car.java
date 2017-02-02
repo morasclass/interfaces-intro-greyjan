@@ -44,6 +44,7 @@ public class Car extends Vehicle {
 	}
 	
 	public String getExteriorFeatures() {
+		
 		String r = "";
 		
 		for(int i = 0; i < feature.length; i++ ) {
@@ -59,14 +60,15 @@ public class Car extends Vehicle {
 	public String toString() {
 		return	"Manufacturer Name\t: " + vehicleManufacturer +"\n" + 
 				"Manufactured Date\t: " + vehicleManufacturedDate + "\n" + 
-				"Vehicle Make\t: " + vehicleMake + "\n" + 
-				"Vehicle Model\t: " + vehicleModel + "\n" +
-				"Vehicle Type\t: " + vehicleType + "\n" + 
+				"Vehicle Make\t\t: " + vehicleMake + "\n" + 
+				"Vehicle Model\t\t: " + vehicleModel + "\n" +
+				"Vehicle Type\t\t: " + vehicleType + "\n" + 
 				vehicleEngine.toString() + "\n" +
 				"Features\t\t\t: " +
 				getExteriorFeatures() +
 				"\t\t\t\t: " + 
-				getInteriorFeatures();
+				getInteriorFeatures().trim() + "\n" + 
+				"Car Axle\t\t\t: " + carAxle;
 	}
 	
 	public static void main(String[] args) {
